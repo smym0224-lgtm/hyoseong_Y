@@ -1,0 +1,8 @@
+{
+  "name": "Remix !!!!정보탐정단: 효성벼리 문화예술발표회 취소 소문의 진실은?",
+  "description": "초등학교 5학년 국어 매체 자료 신뢰성 판단 활동 웹앱 - 효성초등학교 온라인 소문의 진실을 밝히는 미디어 리터러시 탐정 활동",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
