@@ -4,7 +4,6 @@ import { ClueCard } from './ClueCard';
 import { 
   AlertTriangle, 
   CheckCircle2, 
-  Filter, 
   Sparkles, 
   Compass, 
   Award,
@@ -24,14 +23,13 @@ export const ClueList: React.FC<ClueListProps> = ({
   onNavigateToMission,
   onNavigateToReport,
 }) => {
-  const [filterCategory, setFilterCategory] = useState<'all' | 'sns' | 'media' | 'social' | 'official'>('all');
+  const [filterCategory, setFilterCategory] = useState<'all' | 'sns' | 'media' | 'community_official'>('all');
 
   const filteredClues = CLUES_DATA.filter((clue) => {
     if (filterCategory === 'all') return true;
     if (filterCategory === 'sns') return clue.mediaType === 'instagram' || clue.mediaType === 'personal_blog';
     if (filterCategory === 'media') return clue.mediaType === 'youtube' || clue.mediaType === 'online_news';
-    if (filterCategory === 'social') return clue.mediaType === 'community' || clue.mediaType === 'messenger';
-    if (filterCategory === 'official') return clue.mediaType === 'old_webpage' || clue.mediaType === 'public_agency';
+    if (filterCategory === 'community_official') return clue.mediaType === 'community' || clue.mediaType === 'public_agency';
     return true;
   });
 
@@ -47,7 +45,7 @@ export const ClueList: React.FC<ClueListProps> = ({
           <div className="space-y-2 max-w-2xl">
             <div className="flex flex-wrap items-center gap-2">
               <span className="bg-amber-400/20 text-amber-300 border border-amber-400/40 text-xs font-black px-3.5 py-1 rounded-full">
-                🔍 8대 매체 자료 탐색 중
+                🔍 6대 매체 자료 탐색 중
               </span>
               <button
                 type="button"
@@ -60,10 +58,10 @@ export const ClueList: React.FC<ClueListProps> = ({
             </div>
 
             <h2 className="text-xl md:text-2xl font-black tracking-tight text-white">
-              8가지 인터넷 매체 자료를 탐색해 보세요!
+              6가지 인터넷 매체 자료를 탐색해 보세요!
             </h2>
             <p className="text-xs md:text-sm text-slate-300 leading-relaxed">
-              SNS 피드, 개인 블로그, 유튜브 영상, 온라인 뉴스 기사, 커뮤니티, 단톡방, 오래된 웹, 공공기관 홈페이지를 열어
+              SNS 피드, 개인 블로그, 유튜브 영상, 온라인 뉴스 기사, 커뮤니티, 공공기관 홈페이지를 열어
               각 매체 화면의 특징과 내용을 꼼꼼히 살펴보세요.
             </p>
           </div>
@@ -73,8 +71,8 @@ export const ClueList: React.FC<ClueListProps> = ({
             <div className="bg-slate-900/90 px-4 py-2.5 rounded-2xl border border-slate-700 text-xs text-left md:text-right">
               <div className="text-slate-400 text-[11px] font-medium">매체 확인 현황</div>
               <div className="font-black text-lg text-amber-400 tabular-nums flex items-center md:justify-end gap-1.5 mt-0.5">
-                <span>{viewedCount} / 8개 확인됨</span>
-                {viewedCount === 8 && (
+                <span>{viewedCount} / 6개 확인됨</span>
+                {viewedCount === 6 && (
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 inline" />
                 )}
               </div>
@@ -102,7 +100,7 @@ export const ClueList: React.FC<ClueListProps> = ({
           </span>
         </span>
         <span className="text-[11px] text-amber-800 font-black shrink-0 bg-amber-200/70 px-2 py-0.5 rounded">
-          매체 8종 완비
+          매체 6종 완비
         </span>
       </div>
 
@@ -118,7 +116,7 @@ export const ClueList: React.FC<ClueListProps> = ({
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            전체 8개 매체
+            전체 6개 매체
           </button>
           <button
             type="button"
@@ -144,25 +142,14 @@ export const ClueList: React.FC<ClueListProps> = ({
           </button>
           <button
             type="button"
-            onClick={() => setFilterCategory('social')}
+            onClick={() => setFilterCategory('community_official')}
             className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
-              filterCategory === 'social'
+              filterCategory === 'community_official'
                 ? 'bg-white text-slate-900 shadow-xs'
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            커뮤니티 · 메신저 단톡방 (#5, #6)
-          </button>
-          <button
-            type="button"
-            onClick={() => setFilterCategory('official')}
-            className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
-              filterCategory === 'official'
-                ? 'bg-white text-slate-900 shadow-xs'
-                : 'text-slate-600 hover:text-slate-900'
-            }`}
-          >
-            오래된 웹 · 공공기관 (#7, #8)
+            커뮤니티 · 공공기관 (#5, #6)
           </button>
         </div>
 
@@ -172,8 +159,8 @@ export const ClueList: React.FC<ClueListProps> = ({
         </div>
       </div>
 
-      {/* Clue Card Grid (8 Items) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* Clue Card Grid (6 Items) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredClues.map((clue) => {
           const isViewed = viewedClues.includes(clue.id);
 

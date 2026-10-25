@@ -35,10 +35,10 @@ export const MissionScreen: React.FC<MissionScreenProps> = ({
               <span>정보탐정단 수사 임무 안내</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
-              🕵️ 8가지 인터넷 매체 자료 살펴보기
+              🕵️ 6가지 인터넷 매체 자료 살펴보기
             </h1>
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl">
-              인터넷에서 만날 수 있는 8가지 서로 다른 매체 화면을 직접 관찰하고 탐색해 봅시다.
+              인터넷에서 만날 수 있는 6가지 서로 다른 매체 화면을 직접 관찰하고 탐색해 봅시다.
             </p>
           </div>
 
@@ -53,52 +53,42 @@ export const MissionScreen: React.FC<MissionScreenProps> = ({
         </div>
       </div>
 
-      {/* 8 Media Types Preview Grid */}
+      {/* 6 Media Types Preview Grid */}
       <div className="bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-xs space-y-4">
         <h2 className="text-base font-black text-slate-900 flex items-center gap-2">
           <span>📁</span>
-          <span>우리가 탐색할 8가지 매체 자료</span>
+          <span>우리가 탐색할 6가지 매체 자료</span>
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 text-xs">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-center space-y-1">
             <div className="text-2xl">📱</div>
             <div className="font-bold text-slate-900">매체 1. SNS 게시물</div>
             <div className="text-[11px] text-slate-500">인스타그램 피드</div>
           </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-center space-y-1">
             <div className="text-2xl">🌱</div>
             <div className="font-bold text-slate-900">매체 2. 개인 블로그</div>
             <div className="text-[11px] text-slate-500">초록생활 기록장</div>
           </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-center space-y-1">
             <div className="text-2xl">▶️</div>
             <div className="font-bold text-slate-900">매체 3. 유튜브 영상</div>
             <div className="text-[11px] text-slate-500">신기한 과학 이야기</div>
           </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-center space-y-1">
             <div className="text-2xl">📰</div>
             <div className="font-bold text-slate-900">매체 4. 뉴스 기사</div>
             <div className="text-[11px] text-slate-500">오늘의 이슈 속보</div>
           </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-center space-y-1">
             <div className="text-2xl">💬</div>
             <div className="font-bold text-slate-900">매체 5. 커뮤니티</div>
             <div className="text-[11px] text-slate-500">스튜던트톡 자유게시판</div>
           </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
-            <div className="text-2xl">🟡</div>
-            <div className="font-bold text-slate-900">매체 6. 메신저 단톡방</div>
-            <div className="text-[11px] text-slate-500">5-1반 친구들 대화</div>
-          </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
-            <div className="text-2xl">💾</div>
-            <div className="font-bold text-slate-900">매체 7. 오래된 웹</div>
-            <div className="text-[11px] text-slate-500">2019년 생활정보 웹진</div>
-          </div>
-          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3 text-center space-y-1">
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl p-3.5 text-center space-y-1">
             <div className="text-2xl">🏛️</div>
-            <div className="font-bold text-slate-900">매체 8. 공공기관</div>
+            <div className="font-bold text-slate-900">매체 6. 공공기관</div>
             <div className="text-[11px] text-slate-500">바른건강정보센터</div>
           </div>
         </div>
@@ -120,7 +110,7 @@ export const MissionScreen: React.FC<MissionScreenProps> = ({
           onClick={onProceedToClues}
           className="px-6 py-3 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-sm sm:text-base rounded-2xl shadow-md transition-all flex items-center gap-2 cursor-pointer"
         >
-          <span>매체 목록 확인하기 (8종)</span>
+          <span>매체 목록 확인하기 (6종)</span>
           <ArrowRight className="w-5 h-5" />
         </button>
       </div>

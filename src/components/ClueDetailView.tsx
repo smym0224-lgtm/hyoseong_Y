@@ -5,8 +5,6 @@ import { PersonalBlogView } from './media_views/PersonalBlogView';
 import { YouTubeView } from './media_views/YouTubeView';
 import { OnlineNewsView } from './media_views/OnlineNewsView';
 import { CommunityView } from './media_views/CommunityView';
-import { MessengerView } from './media_views/MessengerView';
-import { OldWebpageView } from './media_views/OldWebpageView';
 import { PublicAgencyView } from './media_views/PublicAgencyView';
 import { 
   ArrowLeft, 
@@ -47,10 +45,6 @@ export const ClueDetailView: React.FC<ClueDetailViewProps> = ({
       case 5:
         return <CommunityView />;
       case 6:
-        return <MessengerView />;
-      case 7:
-        return <OldWebpageView />;
-      case 8:
         return <PublicAgencyView />;
       default:
         return null;

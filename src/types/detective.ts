@@ -1,12 +1,10 @@
 export type MediaType =
-  | 'instagram'      // 자료 1: SNS 게시물
-  | 'personal_blog'  // 자료 2: 개인 블로그
-  | 'youtube'        // 자료 3: 유튜브 영상
-  | 'online_news'    // 자료 4: 온라인 뉴스
-  | 'community'      // 자료 5: 온라인 커뮤니티
-  | 'messenger'      // 자료 6: 메신저 단체 대화방
-  | 'old_webpage'    // 자료 7: 오래된 웹페이지
-  | 'public_agency'; // 자료 8: 공공기관 홈페이지
+  | 'instagram'      // 매체 1: SNS 게시물
+  | 'personal_blog'  // 매체 2: 개인 블로그
+  | 'youtube'        // 매체 3: 유튜브 영상
+  | 'online_news'    // 매체 4: 온라인 뉴스
+  | 'community'      // 매체 5: 온라인 커뮤니티
+  | 'public_agency'; // 매체 6: 공공기관 홈페이지
 
 export type CredibilityType = 'trustworthy' | 'needs_verification' | 'unreliable';
 
@@ -23,7 +21,7 @@ export interface ReliabilityCriteria {
 export interface ClueItem {
   id: number;
   mediaType: MediaType;
-  mediaCategory: 'sns' | 'blog' | 'video' | 'news' | 'community' | 'messenger' | 'retro' | 'official';
+  mediaCategory: 'sns' | 'blog' | 'video' | 'news' | 'community' | 'official';
   mediaLabel: string;
   platformName: string;
   title: string;

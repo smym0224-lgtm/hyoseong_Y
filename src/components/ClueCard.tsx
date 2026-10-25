@@ -177,62 +177,7 @@ export const ClueCard: React.FC<ClueCardProps> = ({
           </div>
         );
 
-      /* Card 6: Messenger Chat Style Preview */
-      case 'messenger':
-        return (
-          <div className="bg-[#b2c7da] border border-[#9cb2c4] rounded-xl p-3 flex flex-col justify-between h-40">
-            <div className="flex items-center justify-between text-[11px] text-slate-800 font-bold pb-1 border-b border-black/10">
-              <span className="flex items-center gap-1">
-                <span className="w-4 h-4 rounded-full bg-yellow-400 text-slate-900 text-[9px] flex items-center justify-center font-bold">
-                  5-1
-                </span>
-                5학년 1반 단톡방
-              </span>
-              <span className="text-[10px] text-slate-600 font-medium">22명</span>
-            </div>
-            <div className="space-y-1.5 my-auto">
-              <div className="bg-white rounded-lg rounded-tl-none p-1.5 text-[11px] text-slate-800 max-w-[85%] shadow-2xs">
-                <div className="text-[9px] text-slate-400 flex items-center gap-0.5">
-                  <CornerDownRight className="w-2.5 h-2.5" /> 전달됨
-                </div>
-                <div className="font-bold">“내일 학교 쉰대!”</div>
-              </div>
-              <div className="bg-white rounded-lg rounded-tl-none p-1.5 text-[11px] text-slate-800 max-w-[85%] shadow-2xs">
-                <span>“진짜야? 어디서 들었어?”</span>
-              </div>
-            </div>
-            <div className="text-[10px] text-slate-600 flex items-center justify-between pt-1 border-t border-black/10">
-              <span>2026.10.22 20:15</span>
-              <span>말풍선 대화형</span>
-            </div>
-          </div>
-        );
-
-      /* Card 7: Retro Webpage Style Preview */
-      case 'old_webpage':
-        return (
-          <div className="bg-[#f0f0f0] border-2 border-[#999999] rounded-xl p-3 flex flex-col justify-between h-40 font-sans shadow-2xs">
-            <div className="bg-[#3a506b] text-white p-1 rounded text-[10px] flex items-center justify-between font-mono">
-              <span className="flex items-center gap-1">
-                <HardDrive className="w-3 h-3 text-yellow-300" />
-                테크 &amp; 라이프 팁
-              </span>
-              <span className="text-yellow-300">[2019]</span>
-            </div>
-            <div className="bg-white p-2 rounded border border-[#cccccc]">
-              <div className="text-[10px] text-red-600 font-bold mb-0.5">[주의경보]</div>
-              <div className="text-xs font-bold text-slate-900 line-clamp-2 leading-snug">
-                밤새 휴대전화를 충전하면 반드시 폭발한다
-              </div>
-            </div>
-            <div className="flex items-center justify-between text-[10px] text-slate-600 pt-1 border-t border-[#cccccc]">
-              <span>작성일: 2019-03-05</span>
-              <span className="text-rose-700 font-bold">오래된 자료</span>
-            </div>
-          </div>
-        );
-
-      /* Card 8: Public Agency Style Preview */
+      /* Card 6: Public Agency Style Preview */
       case 'public_agency':
         return (
           <div className="bg-blue-50/80 border-2 border-blue-900/30 rounded-xl p-3.5 flex flex-col justify-between h-40">

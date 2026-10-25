@@ -45,27 +45,27 @@ export const FinalReportView: React.FC<FinalReportViewProps> = ({
         </div>
 
         <h1 className="text-2xl sm:text-3xl font-black text-white">
-          8가지 인터넷 매체 자료의 탐색을 모두 마쳤습니다!
+          6가지 인터넷 매체 자료의 탐색을 모두 마쳤습니다!
         </h1>
         <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-          SNS 피드, 개인 블로그, 유튜브, 뉴스 기사, 커뮤니티, 단톡방, 오래된 웹, 공공기관 등
+          SNS 피드, 개인 블로그, 유튜브, 뉴스 기사, 커뮤니티, 공공기관 등
           다양한 매체 화면의 특징과 정보를 꼼꼼히 확인했습니다.
         </p>
 
         <div className="pt-2">
           <span className="text-xs font-bold bg-slate-800 text-amber-300 border border-slate-700 px-4 py-1.5 rounded-full inline-flex items-center gap-1.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-            <span>총 8개 매체 자료 탐색 완료</span>
+            <span>총 6개 매체 자료 탐색 완료</span>
           </span>
         </div>
       </div>
 
-      {/* 8 Media Exploration Summary List */}
+      {/* 6 Media Exploration Summary List */}
       <div className="bg-white border-2 border-slate-200 rounded-3xl p-6 shadow-xs space-y-4">
         <div className="flex items-center justify-between border-b border-slate-100 pb-3">
           <h2 className="text-base font-black text-slate-900 flex items-center gap-2">
             <span>📋</span>
-            <span>8대 매체 자료 목록 및 특징 요약</span>
+            <span>6대 매체 자료 목록 및 특징 요약</span>
           </h2>
           <span className="text-xs text-slate-500 font-medium">초등 5학년 국어과</span>
         </div>

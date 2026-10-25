@@ -6,7 +6,7 @@ export const PublicAgencyView: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto">
       {/* Educational Safety Disclaimer */}
-      <VirtualMaterialDisclaimer type="health" clueNumber={8} />
+      <VirtualMaterialDisclaimer type="health" clueNumber={6} />
 
       {/* Official Public Agency Portal Container */}
       <div className="bg-white border-2 border-blue-900/30 rounded-2xl overflow-hidden shadow-xs">
